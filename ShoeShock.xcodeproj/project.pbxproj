@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		742DF918253F9F3E00FEADEF /* ShoeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DF917253F9F3E00FEADEF /* ShoeVc.swift */; };
+		742DF91D253FA52000FEADEF /* shoeDetailCollectionViewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DF91C253FA52000FEADEF /* shoeDetailCollectionViewcell.swift */; };
+		742DF922254005A500FEADEF /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DF921254005A500FEADEF /* protocols.swift */; };
+		7440CBAD253A8FAA00BBEC58 /* BrandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBAC253A8FAA00BBEC58 /* BrandButton.swift */; };
+		7440CBB5253A909D00BBEC58 /* brandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBB4253A909D00BBEC58 /* brandCollectionViewCell.swift */; };
+		7440CBC7253BECC700BBEC58 /* shoesCollectionVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBC6253BECC700BBEC58 /* shoesCollectionVCell.swift */; };
+		7440CBF7253E98F500BBEC58 /* gettingColorFromShoeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBF6253E98F500BBEC58 /* gettingColorFromShoeImage.swift */; };
+		744C8C2D2539317E0096FD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C2C2539317E0096FD1A /* AppDelegate.swift */; };
+		744C8C2F2539317E0096FD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C2E2539317E0096FD1A /* SceneDelegate.swift */; };
+		744C8C312539317E0096FD1A /* discoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C302539317E0096FD1A /* discoverVC.swift */; };
+		744C8C342539317E0096FD1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744C8C322539317E0096FD1A /* Main.storyboard */; };
+		744C8C372539317E0096FD1A /* ShoeShock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C352539317E0096FD1A /* ShoeShock.xcdatamodeld */; };
+		744C8C392539317F0096FD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744C8C382539317F0096FD1A /* Assets.xcassets */; };
+		744C8C3C2539317F0096FD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744C8C3A2539317F0096FD1A /* LaunchScreen.storyboard */; };
+		744C8C472539317F0096FD1A /* ShoeShockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C462539317F0096FD1A /* ShoeShockTests.swift */; };
+		744C8C522539317F0096FD1A /* ShoeShockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C512539317F0096FD1A /* ShoeShockUITests.swift */; };
+		744C8C6425393D7B0096FD1A /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C6325393D7B0096FD1A /* Shoes.swift */; };
+		744C8C6A253940430096FD1A /* dataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C69253940430096FD1A /* dataService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		744C8C432539317F0096FD1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744C8C212539317E0096FD1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744C8C282539317E0096FD1A;
+			remoteInfo = ShoeShock;
+		};
+		744C8C4E2539317F0096FD1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744C8C212539317E0096FD1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744C8C282539317E0096FD1A;
+			remoteInfo = ShoeShock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		742DF917253F9F3E00FEADEF /* ShoeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeVc.swift; sourceTree = "<group>"; };
+		742DF91C253FA52000FEADEF /* shoeDetailCollectionViewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoeDetailCollectionViewcell.swift; sourceTree = "<group>"; };
+		742DF921254005A500FEADEF /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
+		7440CBAC253A8FAA00BBEC58 /* BrandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandButton.swift; sourceTree = "<group>"; };
+		7440CBB4253A909D00BBEC58 /* brandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brandCollectionViewCell.swift; sourceTree = "<group>"; };
+		7440CBC6253BECC700BBEC58 /* shoesCollectionVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoesCollectionVCell.swift; sourceTree = "<group>"; };
+		7440CBF6253E98F500BBEC58 /* gettingColorFromShoeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gettingColorFromShoeImage.swift; sourceTree = "<group>"; };
+		744C8C292539317E0096FD1A /* ShoeShock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoeShock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		744C8C2C2539317E0096FD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		744C8C2E2539317E0096FD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		744C8C302539317E0096FD1A /* discoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discoverVC.swift; sourceTree = "<group>"; };
+		744C8C332539317E0096FD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		744C8C362539317E0096FD1A /* ShoeShock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoeShock.xcdatamodel; sourceTree = "<group>"; };
+		744C8C382539317F0096FD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		744C8C3B2539317F0096FD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		744C8C3D2539317F0096FD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744C8C422539317F0096FD1A /* ShoeShockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeShockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		744C8C462539317F0096FD1A /* ShoeShockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeShockTests.swift; sourceTree = "<group>"; };
+		744C8C482539317F0096FD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744C8C4D2539317F0096FD1A /* ShoeShockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeShockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		744C8C512539317F0096FD1A /* ShoeShockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeShockUITests.swift; sourceTree = "<group>"; };
+		744C8C532539317F0096FD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744C8C6325393D7B0096FD1A /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		744C8C69253940430096FD1A /* dataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744C8C262539317E0096FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744C8C3F2539317F0096FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744C8C4A2539317F0096FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7440CBAA253A8F7300BBEC58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7440CBAC253A8FAA00BBEC58 /* BrandButton.swift */,
+				7440CBB4253A909D00BBEC58 /* brandCollectionViewCell.swift */,
+				7440CBC6253BECC700BBEC58 /* shoesCollectionVCell.swift */,
+				7440CBF6253E98F500BBEC58 /* gettingColorFromShoeImage.swift */,
+				742DF91C253FA52000FEADEF /* shoeDetailCollectionViewcell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		744C8C202539317E0096FD1A = {
+			isa = PBXGroup;
+			children = (
+				744C8C2B2539317E0096FD1A /* ShoeShock */,
+				744C8C452539317F0096FD1A /* ShoeShockTests */,
+				744C8C502539317F0096FD1A /* ShoeShockUITests */,
+				744C8C2A2539317E0096FD1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		744C8C2A2539317E0096FD1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744C8C292539317E0096FD1A /* ShoeShock.app */,
+				744C8C422539317F0096FD1A /* ShoeShockTests.xctest */,
+				744C8C4D2539317F0096FD1A /* ShoeShockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744C8C2B2539317E0096FD1A /* ShoeShock */ = {
+			isa = PBXGroup;
+			children = (
+				7440CBAA253A8F7300BBEC58 /* Views */,
+				744C8C6E253943E20096FD1A /* Controllers */,
+				744C8C682539402C0096FD1A /* Services */,
+				744C8C6225393D690096FD1A /* Models */,
+				744C8C2C2539317E0096FD1A /* AppDelegate.swift */,
+				744C8C2E2539317E0096FD1A /* SceneDelegate.swift */,
+				744C8C322539317E0096FD1A /* Main.storyboard */,
+				744C8C382539317F0096FD1A /* Assets.xcassets */,
+				744C8C3A2539317F0096FD1A /* LaunchScreen.storyboard */,
+				744C8C3D2539317F0096FD1A /* Info.plist */,
+				744C8C352539317E0096FD1A /* ShoeShock.xcdatamodeld */,
+			);
+			path = ShoeShock;
+			sourceTree = "<group>";
+		};
+		744C8C452539317F0096FD1A /* ShoeShockTests */ = {
+			isa = PBXGroup;
+			children = (
+				744C8C462539317F0096FD1A /* ShoeShockTests.swift */,
+				744C8C482539317F0096FD1A /* Info.plist */,
+			);
+			path = ShoeShockTests;
+			sourceTree = "<group>";
+		};
+		744C8C502539317F0096FD1A /* ShoeShockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				744C8C512539317F0096FD1A /* ShoeShockUITests.swift */,
+				744C8C532539317F0096FD1A /* Info.plist */,
+			);
+			path = ShoeShockUITests;
+			sourceTree = "<group>";
+		};
+		744C8C6225393D690096FD1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				744C8C6325393D7B0096FD1A /* Shoes.swift */,
+				742DF921254005A500FEADEF /* protocols.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		744C8C682539402C0096FD1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				744C8C69253940430096FD1A /* dataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		744C8C6E253943E20096FD1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				744C8C302539317E0096FD1A /* discoverVC.swift */,
+				742DF917253F9F3E00FEADEF /* ShoeVc.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744C8C282539317E0096FD1A /* ShoeShock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744C8C562539317F0096FD1A /* Build configuration list for PBXNativeTarget "ShoeShock" */;
+			buildPhases = (
+				744C8C252539317E0096FD1A /* Sources */,
+				744C8C262539317E0096FD1A /* Frameworks */,
+				744C8C272539317E0096FD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoeShock;
+			productName = ShoeShock;
+			productReference = 744C8C292539317E0096FD1A /* ShoeShock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		744C8C412539317F0096FD1A /* ShoeShockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744C8C592539317F0096FD1A /* Build configuration list for PBXNativeTarget "ShoeShockTests" */;
+			buildPhases = (
+				744C8C3E2539317F0096FD1A /* Sources */,
+				744C8C3F2539317F0096FD1A /* Frameworks */,
+				744C8C402539317F0096FD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				744C8C442539317F0096FD1A /* PBXTargetDependency */,
+			);
+			name = ShoeShockTests;
+			productName = ShoeShockTests;
+			productReference = 744C8C422539317F0096FD1A /* ShoeShockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		744C8C4C2539317F0096FD1A /* ShoeShockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744C8C5C2539317F0096FD1A /* Build configuration list for PBXNativeTarget "ShoeShockUITests" */;
+			buildPhases = (
+				744C8C492539317F0096FD1A /* Sources */,
+				744C8C4A2539317F0096FD1A /* Frameworks */,
+				744C8C4B2539317F0096FD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				744C8C4F2539317F0096FD1A /* PBXTargetDependency */,
+			);
+			name = ShoeShockUITests;
+			productName = ShoeShockUITests;
+			productReference = 744C8C4D2539317F0096FD1A /* ShoeShockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744C8C212539317E0096FD1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					744C8C282539317E0096FD1A = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					744C8C412539317F0096FD1A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 744C8C282539317E0096FD1A;
+					};
+					744C8C4C2539317F0096FD1A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 744C8C282539317E0096FD1A;
+					};
+				};
+			};
+			buildConfigurationList = 744C8C242539317E0096FD1A /* Build configuration list for PBXProject "ShoeShock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 744C8C202539317E0096FD1A;
+			productRefGroup = 744C8C2A2539317E0096FD1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744C8C282539317E0096FD1A /* ShoeShock */,
+				744C8C412539317F0096FD1A /* ShoeShockTests */,
+				744C8C4C2539317F0096FD1A /* ShoeShockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		744C8C272539317E0096FD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744C8C3C2539317F0096FD1A /* LaunchScreen.storyboard in Resources */,
+				744C8C392539317F0096FD1A /* Assets.xcassets in Resources */,
+				744C8C342539317E0096FD1A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744C8C402539317F0096FD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744C8C4B2539317F0096FD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744C8C252539317E0096FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744C8C312539317E0096FD1A /* discoverVC.swift in Sources */,
+				7440CBF7253E98F500BBEC58 /* gettingColorFromShoeImage.swift in Sources */,
+				742DF91D253FA52000FEADEF /* shoeDetailCollectionViewcell.swift in Sources */,
+				744C8C6A253940430096FD1A /* dataService.swift in Sources */,
+				744C8C372539317E0096FD1A /* ShoeShock.xcdatamodeld in Sources */,
+				7440CBB5253A909D00BBEC58 /* brandCollectionViewCell.swift in Sources */,
+				7440CBC7253BECC700BBEC58 /* shoesCollectionVCell.swift in Sources */,
+				744C8C6425393D7B0096FD1A /* Shoes.swift in Sources */,
+				742DF922254005A500FEADEF /* protocols.swift in Sources */,
+				744C8C2D2539317E0096FD1A /* AppDelegate.swift in Sources */,
+				742DF918253F9F3E00FEADEF /* ShoeVc.swift in Sources */,
+				744C8C2F2539317E0096FD1A /* SceneDelegate.swift in Sources */,
+				7440CBAD253A8FAA00BBEC58 /* BrandButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744C8C3E2539317F0096FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744C8C472539317F0096FD1A /* ShoeShockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744C8C492539317F0096FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744C8C522539317F0096FD1A /* ShoeShockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		744C8C442539317F0096FD1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744C8C282539317E0096FD1A /* ShoeShock */;
+			targetProxy = 744C8C432539317F0096FD1A /* PBXContainerItemProxy */;
+		};
+		744C8C4F2539317F0096FD1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744C8C282539317E0096FD1A /* ShoeShock */;
+			targetProxy = 744C8C4E2539317F0096FD1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		744C8C322539317E0096FD1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744C8C332539317E0096FD1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		744C8C3A2539317F0096FD1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744C8C3B2539317F0096FD1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		744C8C542539317F0096FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		744C8C552539317F0096FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		744C8C572539317F0096FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ShoeShock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Plan-B-Softwarehouse.ShoeShock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShoeShock/Views/ShoeShock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		744C8C582539317F0096FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9AUJ4PT8G;
+				INFOPLIST_FILE = ShoeShock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Plan-B-Softwarehouse.ShoeShock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShoeShock/Views/ShoeShock-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		744C8C5A2539317F0096FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9AUJ4PT8G;
+				INFOPLIST_FILE = ShoeShockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Plan-B-Softwarehouse.ShoeShockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoeShock.app/ShoeShock";
+			};
+			name = Debug;
+		};
+		744C8C5B2539317F0096FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9AUJ4PT8G;
+				INFOPLIST_FILE = ShoeShockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Plan-B-Softwarehouse.ShoeShockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoeShock.app/ShoeShock";
+			};
+			name = Release;
+		};
+		744C8C5D2539317F0096FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9AUJ4PT8G;
+				INFOPLIST_FILE = ShoeShockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Plan-B-Softwarehouse.ShoeShockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoeShock;
+			};
+			name = Debug;
+		};
+		744C8C5E2539317F0096FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9AUJ4PT8G;
+				INFOPLIST_FILE = ShoeShockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Plan-B-Softwarehouse.ShoeShockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoeShock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744C8C242539317E0096FD1A /* Build configuration list for PBXProject "ShoeShock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744C8C542539317F0096FD1A /* Debug */,
+				744C8C552539317F0096FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744C8C562539317F0096FD1A /* Build configuration list for PBXNativeTarget "ShoeShock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744C8C572539317F0096FD1A /* Debug */,
+				744C8C582539317F0096FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744C8C592539317F0096FD1A /* Build configuration list for PBXNativeTarget "ShoeShockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744C8C5A2539317F0096FD1A /* Debug */,
+				744C8C5B2539317F0096FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744C8C5C2539317F0096FD1A /* Build configuration list for PBXNativeTarget "ShoeShockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744C8C5D2539317F0096FD1A /* Debug */,
+				744C8C5E2539317F0096FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		744C8C352539317E0096FD1A /* ShoeShock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				744C8C362539317E0096FD1A /* ShoeShock.xcdatamodel */,
+			);
+			currentVersion = 744C8C362539317E0096FD1A /* ShoeShock.xcdatamodel */;
+			path = ShoeShock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 744C8C212539317E0096FD1A /* Project object */;
+}
