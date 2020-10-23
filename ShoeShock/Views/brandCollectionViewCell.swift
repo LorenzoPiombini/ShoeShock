@@ -18,11 +18,13 @@ class brandCollectionViewCell: UICollectionViewCell {
        
     }
     
-    @IBAction func selectingTheShoesBrand(_sender: Any?){
-//        let shoeToShow = DataService.instance.getShoes(byBrand: brandButton)
-//        if brandButton.isTouchInside == true {
-//            brandButton.isHighlighted = true
-            
+   
+    @IBAction func selectingTheShoesBrand(_ sender: Any?){
+        
+        // i have to figure it out
+        brandButton.isHighlighted = true
+        BrandButton.awakeFromNib()
+        
         }
     }
 

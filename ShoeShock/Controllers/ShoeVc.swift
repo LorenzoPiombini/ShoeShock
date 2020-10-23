@@ -15,7 +15,7 @@ class ShoeVc: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     private(set) public var shoes = [Shoes]()
     func initShoes(shoe: Shoes){
-        shoes = DataService.instance.getShoes()
+        shoes.append(shoe)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,4 +41,10 @@ class ShoeVc: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
 
+    
+    
+    @IBAction func addToCart (_ sender: Any?){
+        DataService.instance.cart.append(contentsOf: shoes)
+        print(DataService.instance.cart)
+    }
 }

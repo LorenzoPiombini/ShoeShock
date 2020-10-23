@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var shoeDisplayed = [Shoes]()
+    
     
     
     @IBOutlet weak var brandCollection: UICollectionView!
     @IBOutlet weak var shoesCollectionView: UICollectionView!
-   
+    
   
    
     
@@ -64,10 +64,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == shoesCollectionView {
             let shoes = DataService.instance.getShoes()[indexPath.row]
         performSegue(withIdentifier: "showDetailShoesTapped", sender: shoes)
         }
-         
+        
+        
+        }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let shoeVc = segue.destination as? ShoeVc {
             shoeVc.initShoes(shoe: sender as! Shoes )

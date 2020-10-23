@@ -9,14 +9,41 @@ import UIKit
 
 class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
     
-    
-    
+    override  func awakeFromNib() {
+        
+    }
+   
+     
+    @IBOutlet weak var shoeCollectionView: UICollectionView!
     
     @IBOutlet weak var brandLbl: UILabel!
     @IBOutlet weak var modelLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var shoeImage: UIImageView!
     @IBOutlet weak var lblToChangeBackGroundColor: UILabel!
+    @IBOutlet  weak var heartBtn: UIButton!
+    
+    @IBAction func putYourShoeInTheCartTappingTheHeart (_ sender: Any?){
+        
+        if heartBtn.isTouchInside {
+            if heartBtn.currentImage?.isEqual(UIImage(named: "heart")) != nil {
+            
+            heartBtn.setImage(UIImage.init(systemName: "heart.fill"), for: .normal)
+                
+            }} else {
+            heartBtn.setImage(UIImage.init(systemName: "heart"), for: .normal)
+           
+        }
+        
+        var index = shoeCollectionView.indexPath(for: self)
+        let shoe = DataService.instance.getShoes()[index!.row]
+        DataService.instance.cart.append(shoe)
+        
+            
+    }
+    
+    
+    
     
     func updateShoesView(forShoes: Shoes){
         brandLbl.text = forShoes.brend
@@ -40,7 +67,6 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
          return UIColor(red: r, green: g, blue: b, alpha: a)
     }
     
-   
-    
-    
-}
+        
+    }
+
