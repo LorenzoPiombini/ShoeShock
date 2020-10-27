@@ -9,9 +9,7 @@ import UIKit
 
 class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
     
-    override  func awakeFromNib() {
-        
-    }
+    var heartbtnTappedCounter = 0
    
      
     @IBOutlet weak var shoeCollectionView: UICollectionView!
@@ -25,19 +23,26 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
     
     @IBAction func putYourShoeInTheCartTappingTheHeart (_ sender: Any?){
         
-        if heartBtn.isTouchInside {
-            if heartBtn.currentImage?.isEqual(UIImage(named: "heart")) != nil {
-            
-            heartBtn.setImage(UIImage.init(systemName: "heart.fill"), for: .normal)
-                
-            }} else {
-            heartBtn.setImage(UIImage.init(systemName: "heart"), for: .normal)
-           
-        }
         
-        var index = shoeCollectionView.indexPath(for: self)
-        let shoe = DataService.instance.getShoes()[index!.row]
-        DataService.instance.cart.append(shoe)
+            if heartbtnTappedCounter == 0{
+            heartBtn.setImage(UIImage.init(systemName: "heart.fill"), for: .normal)
+                var index = shoeCollectionView.indexPath(for: self)
+                let shoe = DataService.instance.getShoes()[index!.row]
+                DataService.instance.cart.append(shoe)
+                heartbtnTappedCounter += 1
+            } else {
+            heartBtn.setImage(UIImage.init(systemName: "heart"), for: .normal)
+                var index = shoeCollectionView.indexPath(for: self)
+                let shoe = DataService.instance.getShoes()[index!.row]
+                if arrayElementCartCompariing(arrayElementOne: shoe, arrayElementTwo: DataService.instance.cart[index!.row]) {
+                    DataService.instance.cart.removeLast()
+                }
+                heartbtnTappedCounter = 0
+            }
+            
+        
+        
+     
         
             
     }
@@ -54,7 +59,9 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
         lblToChangeBackGroundColor.backgroundColor = color
         
     }
-    
+    // i was trying to put in place somthing to get the background of the shoe proogrammatically and automatically !
+    // i explore a little bit of Objective-C however i struggle to find a correct way to implent this
+
     func getPixelColor(pos: CGPoint, inThis: UIImageView ) -> UIColor{
         let pixeldata = inThis.image?.cgImage!.dataProvider!.data
         let data: UnsafePointer = CFDataGetBytePtr(pixeldata)
@@ -66,7 +73,21 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
         let a = CGFloat(data[pixelInfo] + 3) / CGFloat(255.0)
          return UIColor(red: r, green: g, blue: b, alpha: a)
     }
+
     
-        
+    
+    func arrayElementCartCompariing (arrayElementOne: Shoes, arrayElementTwo: Shoes) -> Bool {
+        if arrayElementOne.brend == arrayElementTwo.brend &&
+           arrayElementOne.description == arrayElementTwo.description &&
+           arrayElementOne.imageName == arrayElementTwo.imageName &&
+           arrayElementOne.model == arrayElementTwo.model &&
+           arrayElementOne.price == arrayElementTwo.price &&
+            arrayElementOne.size == arrayElementTwo.size {
+            return true
+        } else {
+            return false
+        }
+    }
+
     }
 

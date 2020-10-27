@@ -79,6 +79,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     
     }
+    
+    @IBAction func sendingDataToCartVc (){
+        let cart = DataService.instance.cart
+        performSegue(withIdentifier: "ShowingCArt", sender: cart)
+    }
+    
 
 
 }

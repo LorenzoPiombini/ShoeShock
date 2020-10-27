@@ -1,14 +1,12 @@
 //
-//  protocols.swift
+//  File.swift
 //  ShoeShock
 //
-//  Created by Lorenzo piombini on 10/21/20.
+//  Created by Lorenzo piombini on 10/26/20.
 //
 
 import Foundation
 import UIKit
-
-protocol sendingTheActualData {
-    
-    func sendingData(_ from: UICollectionViewCell, DidSelectItemAt indexPath:IndexPath, toView: UIViewController )
+protocol RemoveCellFromTheCart {
+    func remove(stepper: UIStepper, indexPath: IndexPath )
 }

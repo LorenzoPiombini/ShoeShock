@@ -45,6 +45,6 @@ class ShoeVc: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     @IBAction func addToCart (_ sender: Any?){
         DataService.instance.cart.append(contentsOf: shoes)
-        print(DataService.instance.cart)
+        
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Shoes {
     private(set) public var model: String
@@ -22,6 +23,9 @@ struct Shoes {
         self.imageName = imageName
         self.price = price
         self.description = description
+        
+        
+        
     }
 }
 
@@ -40,5 +44,7 @@ struct ShoeDisplayed {
         self.imageName = imageName
         self.price = price
         self.description = description
+        
     }
 }
+
