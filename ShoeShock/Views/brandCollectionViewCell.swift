@@ -23,7 +23,11 @@ class brandCollectionViewCell: UICollectionViewCell {
         
         // i have to figure it out
         brandButton.isHighlighted = true
-        BrandButton.awakeFromNib()
+        if brandButton.isHighlighted == true {
+            
+            
+        }
+      
         
         }
     }

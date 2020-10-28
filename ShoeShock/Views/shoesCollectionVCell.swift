@@ -32,20 +32,23 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
                 heartbtnTappedCounter += 1
             } else {
             heartBtn.setImage(UIImage.init(systemName: "heart"), for: .normal)
+                if DataService.instance.cart.count != 0{
                 var index = shoeCollectionView.indexPath(for: self)
                 let shoe = DataService.instance.getShoes()[index!.row]
                 if arrayElementCartCompariing(arrayElementOne: shoe, arrayElementTwo: DataService.instance.cart[index!.row]) {
-                    DataService.instance.cart.removeLast()
+                    DataService.instance.cart.remove(at: index!.row)
                 }
                 heartbtnTappedCounter = 0
             }
+            }
+    }
             
         
         
      
         
             
-    }
+    
     
     
     

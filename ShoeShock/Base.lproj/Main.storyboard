@@ -387,7 +387,7 @@
                                 <rect key="frame" x="12" y="709" width="390" height="30"/>
                                 <state key="normal" title="PURCHASE"/>
                                 <connections>
-                                    <segue destination="Hri-iD-tP4" kind="show" id="6L4-PN-hpZ"/>
+                                    <action selector="showingPurchase:" destination="qct-fs-jNL" eventType="touchUpInside" id="ved-gE-cyt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -411,31 +411,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaY-Tn-7tM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2498.5507246376815" y="62.946428571428569"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="0J4-x8-NsY">
-            <objects>
-                <viewController id="Hri-iD-tP4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UD7-Sf-SO1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PURCHESE COMPLETE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-fG-pdx">
-                                <rect key="frame" x="60" y="192" width="264" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="LN2-sj-03g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="j8I-1K-cz8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B7d-ru-A2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3340.579710144928" y="62.946428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZUm-2s-2ng">

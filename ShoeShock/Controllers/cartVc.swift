@@ -17,6 +17,20 @@ class cartVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     
+    @IBAction func showingPurchase(_ sender: Any) {
+        if DataService.instance.cart.count == 0 {
+            let message = UIAlertController(title: "select a shoe at least ", message: "You can't purchase anything if your cart is empty!", preferredStyle: UIAlertController.Style.alert)
+            message.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(message, animated: true, completion: nil)
+        } else {
+            let messagePurchase = UIAlertController(title: "Thank you!! we appreciate your bussines!", message: "hoping you have a great experience, have a great day!", preferredStyle: UIAlertController.Style.alert)
+            messagePurchase.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(messagePurchase, animated: true, completion: nil)
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cartTableView.delegate = self
