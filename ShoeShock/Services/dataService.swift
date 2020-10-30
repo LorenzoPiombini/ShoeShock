@@ -27,17 +27,18 @@ class DataService {
     func getShoes(byBrand: UIButton, fromThisShoes: [Shoes]) -> [Shoes]{
         var index = 0
         var element: Shoes
+        var newArray = [Shoes]()
         var thisShoes = fromThisShoes
-        for _ in fromThisShoes {
-            if thisShoes[index].model == byBrand.titleLabel!.text! {
+        repeat{
+            if thisShoes[index].brend == byBrand.titleLabel!.text {
                 element = thisShoes.remove(at: index)
-                thisShoes.append(element)
+                newArray.append(element)
                 index += 1
             } else {
                 index += 1
             }
-        }
-        return thisShoes
+        }while(index < thisShoes.count)
+        return newArray
     }
     
 }

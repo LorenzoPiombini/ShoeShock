@@ -53,6 +53,7 @@
                                         <size key="customSize" width="150" height="63"/>
                                         <connections>
                                             <outlet property="brandButton" destination="xKY-H7-UJl" id="oc4-R3-ehX"/>
+                                            <outlet property="parentView" destination="BYZ-38-t0r" id="o63-02-nbE"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -92,7 +93,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx0-es-dRP">
                                                     <rect key="frame" x="8" y="47" width="261" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -168,6 +169,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="brandCollection" destination="Qxa-Se-9Da" id="z7J-dy-EdX"/>
+                        <outlet property="cartBtn" destination="1pV-hO-57j" id="ZVg-mZ-eVY"/>
                         <outlet property="shoesCollectionView" destination="cwj-ZA-BzG" id="HAa-fM-u2C"/>
                         <segue destination="CkA-bB-9MF" kind="show" identifier="showDetailShoesTapped" id="lsT-Bq-IeU"/>
                     </connections>
@@ -201,45 +203,42 @@
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="807"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-9Y-0WX">
-                                                    <rect key="frame" x="8" y="49" width="243" height="265"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-9Y-0WX">
+                                                    <rect key="frame" x="76" y="50" width="258" height="375"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YQ-Z8-rX5">
-                                                    <rect key="frame" x="48" y="485" width="314" height="152"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YQ-Z8-rX5">
+                                                    <rect key="frame" x="10" y="566" width="390" height="117"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="152" id="2D9-Du-MO6"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="117" id="x86-tD-wHf"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-dU-f1T">
-                                                    <rect key="frame" x="8" y="672" width="394" height="67"/>
-                                                    <state key="normal" title="ADD TO CART"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-dU-f1T">
+                                                    <rect key="frame" x="100" y="705" width="210" height="35"/>
+                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <state key="normal" title="ADD TO CART">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="addToCart:" destination="CkA-bB-9MF" eventType="touchUpInside" id="eqn-AW-vXj"/>
                                                     </connections>
                                                 </button>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="119" translatesAutoresizingMaskIntoConstraints="NO" id="knb-r9-FAT">
-                                                    <rect key="frame" x="8" y="373" width="394" height="60"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" spacing="189" translatesAutoresizingMaskIntoConstraints="NO" id="knb-r9-FAT">
+                                                    <rect key="frame" x="5" y="507" width="400" height="22.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-rW-ZUc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="60" id="ljj-mW-JJm"/>
-                                                                <constraint firstAttribute="width" constant="150" id="vxP-dQ-u4w"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-rW-ZUc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="172" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s00-BI-7Fl">
-                                                            <rect key="frame" x="269" y="0.0" width="125" height="60"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="60" id="N2K-pY-Z4d"/>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="QLg-ht-aT0"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s00-BI-7Fl">
+                                                            <rect key="frame" x="361" y="0.0" width="39" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -247,20 +246,17 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="a5M-dU-f1T" secondAttribute="trailing" id="B59-a7-LIH"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="knb-r9-FAT" secondAttribute="trailing" id="GXX-k7-LkP"/>
-                                                <constraint firstItem="zuG-9Y-0WX" firstAttribute="top" secondItem="BoA-06-0vj" secondAttribute="top" constant="49" id="NIq-0E-29a"/>
-                                                <constraint firstItem="knb-r9-FAT" firstAttribute="top" secondItem="zuG-9Y-0WX" secondAttribute="bottom" constant="59" id="Q5R-uO-oit"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="0YQ-Z8-rX5" secondAttribute="trailing" constant="40" id="RfF-L4-mLq"/>
-                                                <constraint firstAttribute="trailing" secondItem="zuG-9Y-0WX" secondAttribute="trailing" constant="159" id="VLv-CV-Oze"/>
-                                                <constraint firstItem="a5M-dU-f1T" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leadingMargin" id="XCk-Ix-WHK"/>
-                                                <constraint firstItem="a5M-dU-f1T" firstAttribute="top" secondItem="0YQ-Z8-rX5" secondAttribute="bottom" constant="35" id="fPL-DQ-8f5"/>
-                                                <constraint firstItem="knb-r9-FAT" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leadingMargin" id="lyC-Wo-xn3"/>
-                                                <constraint firstAttribute="bottom" secondItem="a5M-dU-f1T" secondAttribute="bottom" constant="68" id="pwh-Ln-kay"/>
-                                                <constraint firstItem="0YQ-Z8-rX5" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leadingMargin" constant="40" id="vBE-2H-sCn"/>
-                                                <constraint firstItem="0YQ-Z8-rX5" firstAttribute="top" secondItem="knb-r9-FAT" secondAttribute="bottom" constant="52" id="xI8-cv-RD0"/>
-                                                <constraint firstItem="zuG-9Y-0WX" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leadingMargin" id="xjf-y5-qVs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="0YQ-Z8-rX5" secondAttribute="bottom" constant="162" id="zuk-R1-nro"/>
+                                                <constraint firstItem="0YQ-Z8-rX5" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leading" constant="10" id="4H2-gC-6b0"/>
+                                                <constraint firstItem="knb-r9-FAT" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leading" constant="5" id="JaH-tf-r5h"/>
+                                                <constraint firstItem="0YQ-Z8-rX5" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leading" constant="10" id="Nfu-b3-8cZ"/>
+                                                <constraint firstItem="a5M-dU-f1T" firstAttribute="centerX" secondItem="BoA-06-0vj" secondAttribute="centerX" id="RDg-KB-eZY"/>
+                                                <constraint firstItem="knb-r9-FAT" firstAttribute="centerX" secondItem="BoA-06-0vj" secondAttribute="centerX" id="TkM-gS-0jz"/>
+                                                <constraint firstAttribute="trailing" secondItem="0YQ-Z8-rX5" secondAttribute="trailing" constant="10" id="jIp-gl-tTO"/>
+                                                <constraint firstItem="0YQ-Z8-rX5" firstAttribute="centerX" secondItem="BoA-06-0vj" secondAttribute="centerX" id="k42-mO-GZh"/>
+                                                <constraint firstAttribute="bottom" secondItem="0YQ-Z8-rX5" secondAttribute="bottom" constant="124" id="pd5-0M-UcH"/>
+                                                <constraint firstAttribute="trailing" secondItem="knb-r9-FAT" secondAttribute="trailing" constant="5" id="tim-wI-Vjr"/>
+                                                <constraint firstAttribute="trailing" secondItem="a5M-dU-f1T" secondAttribute="trailing" constant="100" id="wN0-73-ADU"/>
+                                                <constraint firstItem="a5M-dU-f1T" firstAttribute="leading" secondItem="BoA-06-0vj" secondAttribute="leading" constant="100" id="xnB-45-mLj"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="410" height="807"/>
@@ -277,8 +273,12 @@
                         <viewLayoutGuide key="safeArea" id="e7z-d8-8Uc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="HlE-BK-RWL" firstAttribute="trailing" secondItem="e7z-d8-8Uc" secondAttribute="trailing" id="926-f8-Ys5"/>
                             <constraint firstItem="e7z-d8-8Uc" firstAttribute="bottom" secondItem="HlE-BK-RWL" secondAttribute="bottom" id="LDa-UP-R6F"/>
+                            <constraint firstItem="HlE-BK-RWL" firstAttribute="leading" secondItem="e7z-d8-8Uc" secondAttribute="leading" id="NBG-s3-Pxf"/>
                             <constraint firstItem="HlE-BK-RWL" firstAttribute="leading" secondItem="e7z-d8-8Uc" secondAttribute="leading" id="Nj9-Dd-dvj"/>
+                            <constraint firstItem="HlE-BK-RWL" firstAttribute="bottom" secondItem="e7z-d8-8Uc" secondAttribute="bottom" id="TO9-WD-bO2"/>
+                            <constraint firstItem="HlE-BK-RWL" firstAttribute="top" secondItem="e7z-d8-8Uc" secondAttribute="top" id="eXE-vP-eZ5"/>
                             <constraint firstItem="HlE-BK-RWL" firstAttribute="trailing" secondItem="e7z-d8-8Uc" secondAttribute="trailing" id="qoU-aO-mvh"/>
                             <constraint firstItem="HlE-BK-RWL" firstAttribute="top" secondItem="e7z-d8-8Uc" secondAttribute="top" id="sBz-S9-b8o"/>
                         </constraints>
@@ -440,6 +440,9 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

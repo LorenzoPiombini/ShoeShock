@@ -16,7 +16,7 @@ class cartVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     
-    
+    // button triggin the alert message of purchasing done, or if it is empty it will show a message accordingly
     @IBAction func showingPurchase(_ sender: Any) {
         if DataService.instance.cart.count == 0 {
             let message = UIAlertController(title: "select a shoe at least ", message: "You can't purchase anything if your cart is empty!", preferredStyle: UIAlertController.Style.alert)
@@ -26,7 +26,8 @@ class cartVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let messagePurchase = UIAlertController(title: "Thank you!! we appreciate your bussines!", message: "hoping you have a great experience, have a great day!", preferredStyle: UIAlertController.Style.alert)
             messagePurchase.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(messagePurchase, animated: true, completion: nil)
-            
+            DataService.instance.cart.removeAll()
+            cartTableView.reloadData()
         }
     }
     

@@ -15,9 +15,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var brandCollection: UICollectionView!
     @IBOutlet weak var shoesCollectionView: UICollectionView!
+    @IBOutlet weak var cartBtn: UIBarButtonItem!
+    @IBOutlet weak var brandBtn: UIButton!
     
-  
-   
     
      override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }else {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showingTheShoes", for: indexPath) as? shoesCollectionVCell {
                    let shoe = DataService.instance.getShoes()[indexPath.row]
+            
                    cell.updateShoesView(forShoes: shoe)
                    
                    return cell

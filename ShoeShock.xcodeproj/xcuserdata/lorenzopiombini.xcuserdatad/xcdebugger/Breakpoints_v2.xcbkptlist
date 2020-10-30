@@ -46,10 +46,102 @@
             filePath = "ShoeShock/Views/brandCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "brandCollectionViewCell"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "05F89F67-9FE1-49E1-AEC5-2C86566DDD44 - 3793bd6290923eba"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoeShock.brandCollectionViewCell.parentView.getter : Swift.Optional&lt;__C.UIViewController&gt;"
+                  moduleName = "ShoeShock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lorenzopiombini/Desktop/Devslopes%20accademy/week%20six/ShoeShock/ShoeShock/Views/brandCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "05F89F67-9FE1-49E1-AEC5-2C86566DDD44 - 8d5d9beb64382ea6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoeShock.brandCollectionViewCell.parentView.setter : Swift.Optional&lt;__C.UIViewController&gt;"
+                  moduleName = "ShoeShock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lorenzopiombini/Desktop/Devslopes%20accademy/week%20six/ShoeShock/ShoeShock/Views/brandCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "05F89F67-9FE1-49E1-AEC5-2C86566DDD44 - 381333253a46aca6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoeShock.brandCollectionViewCell.parentView.modify : Swift.Optional&lt;__C.UIViewController&gt;"
+                  moduleName = "ShoeShock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lorenzopiombini/Desktop/Devslopes%20accademy/week%20six/ShoeShock/ShoeShock/Views/brandCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "05F89F67-9FE1-49E1-AEC5-2C86566DDD44 - 66e96f637c95b77c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoeShock.brandCollectionViewCell.parentView.modify : Swift.Optional&lt;__C.UIViewController&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ShoeShock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lorenzopiombini/Desktop/Devslopes%20accademy/week%20six/ShoeShock/ShoeShock/Views/brandCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "05F89F67-9FE1-49E1-AEC5-2C86566DDD44 - 1c7600f82851b55e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoeShock.brandCollectionViewCell.init(frame: __C.CGRect) -&gt; ShoeShock.brandCollectionViewCell"
+                  moduleName = "ShoeShock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lorenzopiombini/Desktop/Devslopes%20accademy/week%20six/ShoeShock/ShoeShock/Views/brandCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "306">
+               </Location>
+               <Location
+                  uuid = "05F89F67-9FE1-49E1-AEC5-2C86566DDD44 - 96ab49e15c3e7342"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoeShock.brandCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ShoeShock.brandCollectionViewCell&gt;"
+                  moduleName = "ShoeShock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lorenzopiombini/Desktop/Devslopes%20accademy/week%20six/ShoeShock/ShoeShock/Views/brandCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "223">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -97,8 +189,8 @@
             filePath = "ShoeShock/Controllers/discoverVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -113,8 +205,8 @@
             filePath = "ShoeShock/Controllers/discoverVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -129,8 +221,8 @@
             filePath = "ShoeShock/Controllers/discoverVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -145,8 +237,8 @@
             filePath = "ShoeShock/Views/brandCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "selectingTheShoesBrand(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -177,24 +269,24 @@
             filePath = "ShoeShock/Views/shoesCollectionVCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "shoesCollectionVCell"
-            landmarkType = "3">
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "arrayElementCartCompariing(arrayElementOne:arrayElementTwo:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "806B638A-8CAB-499A-8932-A527B66E3F63"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShoeShock/Views/shoesCollectionVCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "putYourShoeInTheCartTappingTheHeart(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -260,6 +352,118 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "changingQuantity(_sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB90510C-C152-4D8E-ADCB-1CDD3A69484F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/carTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "updateCartView(shoe:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4EFC6D8-83E4-472A-A7F3-8F427E3DE756"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/carTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "updateCartView(shoe:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D54A27C2-9448-4AA3-A99A-DB73DDDA3CCB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/carTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "updateCartView(shoe:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38E36483-8DB8-436D-91D9-5037A3921ED9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/carTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "updateCartView(shoe:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B63F7375-3442-42CB-B042-054B0AE936A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/shoesCollectionVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "updateShoesView(forShoes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00C4534D-F284-40F0-9B6D-107698AB38EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/shoesCollectionVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "putYourShoeInTheCartTappingTheHeart(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75E84E27-CDB3-44EF-AA67-BB0F9A2B6852"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoeShock/Views/shoesCollectionVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "putYourShoeInTheCartTappingTheHeart(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

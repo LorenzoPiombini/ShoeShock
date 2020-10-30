@@ -38,7 +38,7 @@ class carTableViewCell: UITableViewCell, UITableViewDelegate {
                           stepperCalculatingNewQuantityAndPriceIfincreasing(price: priceLbl, StepperValue: stepper)
                           oldStepperValue = stepper.value
         }else {
-            
+            // helped from Alvin !!! thank you so much
             let point = cartImage.convert(CGPoint.zero, to: tableViewParent)
             guard let indexPath = tableViewParent.indexPathForRow(at: point) else {
              return
@@ -57,7 +57,13 @@ class carTableViewCell: UITableViewCell, UITableViewDelegate {
         priceLbl.text = shoe.price
         modelLbl.text = shoe.model
         cartImage.image = UIImage(named: shoe.imageName)
-        backgroundColorLbl.backgroundColor = getPixelColor(pos: CGPoint(x: 34, y: 56), inThis: cartImage)
+        var point = cartImage.convert(CGPoint.zero, to: tableViewParent)
+      
+        // calculating the center of UIImageView
+//        point.x = point.x + (cartImage.image!.size.width/2)
+//        point.y = point.y + (cartImage.image!.size.height/2)
+//
+//        backgroundColorLbl.backgroundColor = getPixelColor(pos: point, inThis: cartImage)
     }
     
     // i was trying to put in place somthing to get the background of the shoe proogrammatically and automatically !

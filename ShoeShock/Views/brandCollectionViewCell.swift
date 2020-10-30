@@ -8,24 +8,30 @@
 import UIKit
 
 class brandCollectionViewCell: UICollectionViewCell {
+    
  
     
     @IBOutlet weak var brandButton: UIButton!
-    
+    @IBOutlet weak var parentView: UIViewController!
     
     func updateViews(shoes: Shoes){
         brandButton.setTitle("\(shoes.brend)", for: .normal)
        
     }
     
-   
+   // I am stil trying how to do it :
+    // this was supposed to select the brand and showing the array accordingly. but I am struggling to understand how to trig it from the Collection viewCell, I could do it form th discoverVC , how ever i could`t declair the IbOutlet for the BrandBtn because it threw an error like illigal configuration
+    // I will love to have your suggestions
+    
     @IBAction func selectingTheShoesBrand(_ sender: Any?){
+        var shoe = DataService.instance.getShoes()
         
-        // i have to figure it out
+       var newArraywithdata = DataService.instance.getShoes(byBrand:brandButton, fromThisShoes: shoe)
         brandButton.isHighlighted = true
         if brandButton.isHighlighted == true {
             
-            
+      //
+         
         }
       
         
