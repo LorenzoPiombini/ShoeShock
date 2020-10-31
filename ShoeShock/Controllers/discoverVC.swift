@@ -27,6 +27,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         shoesCollectionView.dataSource = self
         shoesCollectionView.delegate = self
         
+        
+       
 
          }
 
@@ -50,19 +52,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             return cell
         } else {
             return brandCollectionViewCell()}
-        }else {
+        }else /*if DataService.instance.brandArray.count == 0 */{ // this was an attempt to display the shoes order by brand, however i need help to do so as you can see from the brandCollectionViewCell file, I did not ask that question in the chat to avoid bothering anyone since it is not a project`s requirement.
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showingTheShoes", for: indexPath) as? shoesCollectionVCell {
                    let shoe = DataService.instance.getShoes()[indexPath.row]
-            
                    cell.updateShoesView(forShoes: shoe)
-                   
                    return cell
             }
-        else{
-            return shoesCollectionVCell()
+          else /* if DataService.instance.brandArray.count != 0 {
+//                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showingTheShoes", for: indexPath) as? shoesCollectionVCell {
+//                    let shoeByBrand = DataService.instance.brandArray[indexPath.row]
+//                    cell.updateShoesView(forShoes: shoeByBrand)
+//                    return cell
+//                } else */{
+                    return shoesCollectionVCell()
+                }
         }
     }
-    }
+       
+
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == shoesCollectionView {

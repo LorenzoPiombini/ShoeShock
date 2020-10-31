@@ -16,7 +16,7 @@ class shoeDetailCollectionViewcell: UICollectionViewCell {
     func updateShoeDetailView(shoe: Shoes){
         shoeImage.image = UIImage(named: shoe.imageName)
         modelLbl.text = shoe.model
-        priceLbl.text = shoe.price
+        priceLbl.text = "$ \(shoe.price)"
         descriptionLbl.text = shoe.description
         
         

@@ -36,7 +36,7 @@ class cartVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         cartTableView.delegate = self
         cartTableView.dataSource = self
-       
+    
         
         // Do any additional setup after loading the view.
     }
@@ -66,5 +66,10 @@ class cartVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return carTableViewCell()
     }
    
+    func addingThePrice() {
+
+        
+        
+    }
     
 }

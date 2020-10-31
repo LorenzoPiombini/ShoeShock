@@ -13,6 +13,7 @@ class brandCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var brandButton: UIButton!
     @IBOutlet weak var parentView: UIViewController!
+    @IBOutlet weak var shoeCollectionView: UICollectionView!
     
     func updateViews(shoes: Shoes){
         brandButton.setTitle("\(shoes.brend)", for: .normal)
@@ -24,19 +25,19 @@ class brandCollectionViewCell: UICollectionViewCell {
     // I will love to have your suggestions
     
     @IBAction func selectingTheShoesBrand(_ sender: Any?){
-        var shoe = DataService.instance.getShoes()
-        
-       var newArraywithdata = DataService.instance.getShoes(byBrand:brandButton, fromThisShoes: shoe)
-        brandButton.isHighlighted = true
-        if brandButton.isHighlighted == true {
-            
-      //
+//        var shoe = DataService.instance.getShoes()
+//        DataService.instance.brandArray = DataService.instance.getShoes(byBrand:brandButton, fromThisShoes: shoe)
+//        //var n = ViewController.viewDidLoad(parentView as! ViewController)
+//        brandButton.isHighlighted = true
+//        if brandButton.isHighlighted == true {
+//
+//      //
          
         }
       
         
         }
-    }
+    
 
     
 

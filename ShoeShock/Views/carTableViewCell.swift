@@ -24,10 +24,13 @@ class carTableViewCell: UITableViewCell, UITableViewDelegate {
     
  
     func stepperCalculatingNewQuantityAndPriceIfincreasing(price: UILabel, StepperValue: UIStepper){
+       
+       
         let Price = Int(price.text!)!
         let realPrice = Price / Int(oldStepperValue)
         valueStepperLabel.text = Int(StepperValue.value).description
         price.text = "\((realPrice) * Int(StepperValue.value))"
+   
     }
     
     
@@ -38,7 +41,7 @@ class carTableViewCell: UITableViewCell, UITableViewDelegate {
                           stepperCalculatingNewQuantityAndPriceIfincreasing(price: priceLbl, StepperValue: stepper)
                           oldStepperValue = stepper.value
         }else {
-            // helped from Alvin !!! thank you so much
+            // I had been helped from Alvin !!! thank you so much
             let point = cartImage.convert(CGPoint.zero, to: tableViewParent)
             guard let indexPath = tableViewParent.indexPathForRow(at: point) else {
              return
@@ -57,7 +60,7 @@ class carTableViewCell: UITableViewCell, UITableViewDelegate {
         priceLbl.text = shoe.price
         modelLbl.text = shoe.model
         cartImage.image = UIImage(named: shoe.imageName)
-        var point = cartImage.convert(CGPoint.zero, to: tableViewParent)
+//        var point = cartImage.convert(CGPoint.zero, to: tableViewParent)
       
         // calculating the center of UIImageView
 //        point.x = point.x + (cartImage.image!.size.width/2)
@@ -83,6 +86,8 @@ class carTableViewCell: UITableViewCell, UITableViewDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        priceLbl.clipsToBounds = true
+        priceLbl.textAlignment = .center
         if DataService.instance.cart.count != 0 {
         stepper.value = 1
         valueStepperLabel.text = "\(Int(stepper.value))"

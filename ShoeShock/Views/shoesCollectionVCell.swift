@@ -52,6 +52,10 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
             
     }
         
+    
+    
+    
+    
 //   below I tryed to put a bedge on the cart item, without succes
     
     
@@ -77,7 +81,7 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
     func updateShoesView(forShoes: Shoes){
         brandLbl.text = forShoes.brend
         modelLbl.text = forShoes.model
-        priceLbl.text = forShoes.price
+        priceLbl.text = "$ \(forShoes.price)"
         shoeImage.image = UIImage(named: forShoes.imageName)
         
 //        let point: CGPoint = .init(x: shoeImage.image!.size.width/2, y: shoeImage.image!.size.height/2)
@@ -101,6 +105,7 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
          return UIColor(red: r, green: g, blue: b, alpha: a)
     }
 
+    // the follwing function is for determinate wheater the array instance is equal at the one in the cart, if so , the function will delete it cause this method will be called when the user deselected the heart btn, see uper along this swift file
     
     
     func arrayElementCartCompariing (arrayElementOne: Shoes, arrayElementTwo: [Shoes]) -> [Shoes] {
@@ -127,6 +132,11 @@ class shoesCollectionVCell: UICollectionViewCell, UICollectionViewDelegate {
     
 
 }
+    override  func awakeFromNib() {
+        modelLbl.adjustsFontSizeToFitWidth = true
+       
+    }
+    
 }
 
 // I wrote the follwing code to implement the back ground color for the shoes in an authomatically way, of course I find a lot on the web, but i need to dive more into down to the page you can find the link

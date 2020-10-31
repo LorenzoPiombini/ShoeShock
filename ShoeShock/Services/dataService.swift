@@ -13,7 +13,7 @@ class DataService {
     private let shoes = [Shoes(model: "Xfg 34 PRO", size: 12, brend: "Adidas", imageName: "Adidas .png", price: "347", description: "New shoe concept, there is no way that you will try other brands in the future"), Shoes(model: "67 TYPO AWE", size: 12, brend: "Nike", imageName: "nike .png", price: "780", description: "New shoe concept, there is no way that you will try other brands in the future"), Shoes(model: "Classic Black 56", size: 11, brend: "Converse", imageName: "allstarNoBackkGround.jpg", price: "76", description: "New shoe concept, there is no way that you will try other brands in the future"), Shoes(model: "CHY 45 cross", size: 10, brend: "Reebook", imageName: "Reebook .png", price: "200", description: "New shoe concept, there is no way that you will try other brands in the future")]
     
    var cart = [Shoes]()
-    
+   var brandArray = [Shoes]()
 
     
   
