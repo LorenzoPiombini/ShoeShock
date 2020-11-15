@@ -11,7 +11,6 @@
 		742DF91D253FA52000FEADEF /* shoeDetailCollectionViewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DF91C253FA52000FEADEF /* shoeDetailCollectionViewcell.swift */; };
 		743F65BA254D0DDE00F39B41 /* drawingCurrencySignToAvoidStepperCalculationIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F65B9254D0DDE00F39B41 /* drawingCurrencySignToAvoidStepperCalculationIssue.swift */; };
 		743FA3D52543DF4A0067CB02 /* cartVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA3D42543DF4A0067CB02 /* cartVc.swift */; };
-		7440CBAD253A8FAA00BBEC58 /* BrandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBAC253A8FAA00BBEC58 /* BrandButton.swift */; };
 		7440CBB5253A909D00BBEC58 /* brandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBB4253A909D00BBEC58 /* brandCollectionViewCell.swift */; };
 		7440CBC7253BECC700BBEC58 /* shoesCollectionVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBC6253BECC700BBEC58 /* shoesCollectionVCell.swift */; };
 		744902FE2544588E00D30DDA /* carTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744902FD2544588E00D30DDA /* carTableViewCell.swift */; };
@@ -26,6 +25,7 @@
 		744C8C522539317F0096FD1A /* ShoeShockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C512539317F0096FD1A /* ShoeShockUITests.swift */; };
 		744C8C6425393D7B0096FD1A /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C6325393D7B0096FD1A /* Shoes.swift */; };
 		744C8C6A253940430096FD1A /* dataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C8C69253940430096FD1A /* dataService.swift */; };
+		74818859255A7819008A1F58 /* BrandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440CBAC253A8FAA00BBEC58 /* BrandButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,8 +186,8 @@
 		744C8C6E253943E20096FD1A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				744C8C302539317E0096FD1A /* discoverVC.swift */,
 				742DF917253F9F3E00FEADEF /* ShoeVc.swift */,
+				744C8C302539317E0096FD1A /* discoverVC.swift */,
 				743FA3D42543DF4A0067CB02 /* cartVc.swift */,
 			);
 			path = Controllers;
@@ -327,6 +327,7 @@
 				744902FE2544588E00D30DDA /* carTableViewCell.swift in Sources */,
 				743F65BA254D0DDE00F39B41 /* drawingCurrencySignToAvoidStepperCalculationIssue.swift in Sources */,
 				744C8C312539317E0096FD1A /* discoverVC.swift in Sources */,
+				74818859255A7819008A1F58 /* BrandButton.swift in Sources */,
 				742DF91D253FA52000FEADEF /* shoeDetailCollectionViewcell.swift in Sources */,
 				744C8C6A253940430096FD1A /* dataService.swift in Sources */,
 				744C8C372539317E0096FD1A /* ShoeShock.xcdatamodeld in Sources */,
@@ -337,7 +338,6 @@
 				744C8C2D2539317E0096FD1A /* AppDelegate.swift in Sources */,
 				742DF918253F9F3E00FEADEF /* ShoeVc.swift in Sources */,
 				744C8C2F2539317E0096FD1A /* SceneDelegate.swift in Sources */,
-				7440CBAD253A8FAA00BBEC58 /* BrandButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -498,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -515,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V9AUJ4PT8G;
 				INFOPLIST_FILE = ShoeShock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
